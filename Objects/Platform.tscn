@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/Image 373.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Platform.gd" type="Script" id=2]
+
+[sub_resource type="PhysicsMaterial" id=7]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 172.706, 101.122 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Platform" type="RigidBody2D" parent="."]
+position = Vector2( 1, 0 )
+mode = 3
+physics_material_override = SubResource( 7 )
+contacts_reported = 5
+contact_monitor = true
+angular_velocity = 10.0
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="Platform"]
+margin_left = -79.9999
+margin_top = -22.0
+margin_right = -6.99994
+margin_bottom = 18.0
+rect_scale = Vector2( 2.18662, 1.51971 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2( -1, 8 )
+scale = Vector2( 0.396538, 0.197781 )
+shape = SubResource( 3 )
+one_way_collision_margin = 128.0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/trottna.wav-5f4f69b5fe3dbc9b49fd4ddae09ce33c.sample"
+
+[deps]
+
+source_file="res://Audio/trottna.wav"
+dest_files=[ "res://.import/trottna.wav-5f4f69b5fe3dbc9b49fd4ddae09ce33c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
